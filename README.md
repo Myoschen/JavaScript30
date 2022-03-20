@@ -1,7 +1,5 @@
 # JavaScript30
 
----
-
 ## 介紹
 
 這是由 WES BOS 所製作的一系列純 JavaScript 練習。
@@ -9,6 +7,7 @@
 
 > [WES BOS's Github](https://github.com/wesbos/JavaScript30)
 > [JavaScript30 Official website](https://javascript30.com/)
+
 ## 目標
 
 希望透過本次練習來加深自己對於 JavaScript 的理解。
