@@ -6,7 +6,7 @@
 總共有 30 個主題練習，其中每個主題都有教學影片及範例檔案可參考。
 
 > [WES BOS's Github](https://github.com/wesbos/JavaScript30)
-> [JavaScript30 Official website](https://javascript30.com/)
+  [JavaScript30 Official website](https://javascript30.com/)
 
 ## 目標
 
