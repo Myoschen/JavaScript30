@@ -57,7 +57,7 @@
     <audio data-key="76" src="sounds/tink.wav"></audio>
 
     <script>
-      (function () {
+      {
         // This function is called when the keydown event occurs
         let playAudio = function (e) {
           const audio = document.querySelector(
@@ -86,7 +86,7 @@
 
         // Keydown event
         window.addEventListener("keydown", playAudio);
-      })();
+      }
     </script>
   </body>
 </html>
