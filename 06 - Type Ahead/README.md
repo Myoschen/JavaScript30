@@ -28,10 +28,7 @@
 
 ## 參考
 
-- [Using Fetch - Web APIs | MDN](https://developer.mozilla.org/zh-TW/docs/Web/API/Fetch_API/Using_Fetch)
-
-- [String.prototype.match() - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String/match)
-
-- [String.prototype.replace() - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
-
-- [[JS] 正則表達式（Regular Expression, regex）](https://pjchender.dev/javascript/js-regex/)
+1. [Using Fetch - Web APIs | MDN](https://developer.mozilla.org/zh-TW/docs/Web/API/Fetch_API/Using_Fetch)
+2. [String.prototype.match() - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String/match)
+3. [String.prototype.replace() - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
+4. [[JS] 正則表達式（Regular Expression, regex）](https://pjchender.dev/javascript/js-regex/)

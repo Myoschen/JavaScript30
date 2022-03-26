@@ -18,6 +18,6 @@
 
 ## 參考
 
-- [Array - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array)
-- [JavaScript 之一定要了解的 Array 與方法](https://ithelp.ithome.com.tw/users/20104175/ironman/2584)
-- [innerText、innerHTML、textContent、outerHTML 的差別](https://orandigo.github.io/blog/2020/03/22/20200322-innerText-innerHTML-textContent-outerHTML/)
+1. [Array - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array)
+2. [JavaScript 之一定要了解的 Array 與方法](https://ithelp.ithome.com.tw/users/20104175/ironman/2584)
+3. [innerText、innerHTML、textContent、outerHTML 的差別](https://orandigo.github.io/blog/2020/03/22/20200322-innerText-innerHTML-textContent-outerHTML/)

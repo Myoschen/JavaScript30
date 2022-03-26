@@ -25,3 +25,8 @@
   ```javascript
   key.addEventListener("transitionend", removeTransition);
   ```
+
+## 參考
+
+1. [[技術分享] 什麼是 HTML 5 中的資料屬性（data-* attribute）](https://pjchender.blogspot.com/2017/01/html-5-data-attribute.html)
+2. [transitionend - Web API 接口参考 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement/transitionend_event)
