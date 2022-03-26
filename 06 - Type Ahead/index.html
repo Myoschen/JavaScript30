@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Type Ahead 👀</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="search-form">
+      <input type="text" class="search" placeholder="City or State" />
+      <ul class="suggestions">
+        <li>Filter for a city</li>
+        <li>or a state</li>
+      </ul>
+    </form>
+    <script>
+      {
+        const searchInput = document.querySelector(".search");
+        const suggestions = document.querySelector(".suggestions");
+
+        // 取得頁面原本所顯示 html。
+        const defaultHtml = suggestions.innerHTML;
+
+        const endpoint =
+          "https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json";
+
+        const locations = [];
+
+        // 透過 fetch 從 API 獲取 data，並將取得的資料放置 locations。
+        fetch(endpoint)
+          .then((res) => res.json())
+          .then((data) => {
+            const mappedData = data.map((loc) => ({
+              city: loc.city,
+              state: loc.state,
+              population: loc.population,
+            }));
+            locations.push(...mappedData);
+          });
+
+        // console.log(locations);
+
+        // 修改 population 呈現方式
+        function numberWithCommas(num) {
+          const regex = new RegExp(/\B(?=(\d{3})+(?!\d))/g);
+          return num.replace(regex, ",");
+        }
+
+        // 將符合 searchInput 的資料顯示於頁面上。
+        function displayMatches(e) {
+          // 透過正規表達式來尋找符合的資料。
+          // 篩選條件為 gi：全文及不區分大小寫。
+          const input = e.target.value;
+          const regex = new RegExp(input, "gi");
+          const matches = locations.filter(
+            ({ city, state }) => city.match(regex) || state.match(regex)
+          );
+
+          // 轉為 html 格式。
+          const html = matches
+            .map(({ city, state, population }) => {
+              const cityName = city.replace(
+                regex,
+                `<span class="hl">${input}</span>`
+              );
+              const stateName = state.replace(
+                regex,
+                `<span class="hl">${input}</span>`
+              );
+              return `
+              <li>
+                <span class="name">${cityName}, ${stateName}</span>
+                <span class="population">${numberWithCommas(population)}</span>
+              </li>
+            `;
+            })
+            .join("");
+          suggestions.innerHTML = input.length > 0 ? html : defaultHtml;
+        }
+
+        searchInput.addEventListener("input", displayMatches);
+      }
+    </script>
+  </body>
+</html>
