@@ -1,4 +1,4 @@
-# Day 2 - JS AND CSS CLOCK
+# 02 - JS AND CSS CLOCK
 
 ## 目標
 
@@ -7,6 +7,7 @@
 ## 提示
 
 - 創造時間物件，取得 hours、minutes、seconds。
+
   ```javascript
   const current = new Date();
   current.getHours();
@@ -15,6 +16,7 @@
   ```
 
 - 透過 `setInterval` 每秒自動更新時鐘。
+
   ```javascript
   setInterval(update, 1000);
   ```
