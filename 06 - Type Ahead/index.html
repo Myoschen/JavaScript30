@@ -27,16 +27,29 @@
         const locations = [];
 
         // 透過 fetch 從 API 獲取 data，並將取得的資料放置 locations。
-        fetch(endpoint)
-          .then((res) => res.json())
-          .then((data) => {
-            const mappedData = data.map((loc) => ({
+        // fetch(endpoint)
+        //   .then((res) => res.json())
+        //   .then((data) => {
+        //     const mappedData = data.map((loc) => ({
+        //       city: loc.city,
+        //       state: loc.state,
+        //       population: loc.population,
+        //     }));
+        //     locations.push(...mappedData);
+        //   });
+
+        // fetch + async / await 來處理非同步
+        (async () => {
+          const res = await fetch(endpoint);
+          const data = await res.json();
+          locations.push(
+            ...data.map((loc) => ({
               city: loc.city,
               state: loc.state,
               population: loc.population,
-            }));
-            locations.push(...mappedData);
-          });
+            }))
+          );
+        })();
 
         // console.log(locations);
 
