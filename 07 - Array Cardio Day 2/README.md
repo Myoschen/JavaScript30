@@ -1,4 +1,4 @@
-# 04 - Array Cardio Day 2
+# 07 - Array Cardio Day 2
 
 ## 目標
 
