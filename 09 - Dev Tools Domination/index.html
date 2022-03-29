@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Console Tricks!</title>
+  </head>
+  <body>
+    <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+    <script>
+      const dogs = [
+        { name: "Snickers", age: 2 },
+        { name: "hugo", age: 8 },
+      ];
+
+      function makeGreen() {
+        const p = document.querySelector("p");
+        p.style.color = "#BADA55";
+        p.style.fontSize = "50px";
+      }
+
+      // Regular
+      // 一般的 console 輸出
+      console.log("hello~");
+
+      // Interpolated
+      // 透過 %s 可將後方參數加入
+      console.log("I am %s", "Myos");
+
+      // Styled
+      // %c 調整輸出的 css 樣式
+      console.log("%c big word", "font-size: 70px; color: blue;");
+
+      // warning!
+      // 警告訊息，前方會有警告標誌
+      console.warn("%c oh no", "color: red; font-size:70px");
+
+      // Error :|
+      // 錯誤訊息，前方會有錯誤標誌
+      console.error("%s error", "something");
+
+      // Info
+      // 資訊訊息
+      console.info("info?");
+
+      // Testing
+      // 透過 assert() 來測試
+      // 當錯誤時會將後方參數輸出
+      console.assert(1 === 2, "That's wrong!");
+
+      // clearing
+      // 清空輸出
+      console.clear();
+
+      // Viewing DOM Elements
+      // 透過 dir() 查詢 DOM element 的 properties、method
+      let p = document.querySelector("p");
+      console.dir(p);
+
+      // Grouping together
+      // 群組化輸出
+      dogs.forEach((dog) => {
+        // 傳入參數為群組名稱，也可使用 group()
+        console.groupCollapsed(`${dog.name}`);
+        console.log(`${dog.name}`);
+        console.log(`${dog.age}`);
+        console.groupEnd();
+      });
+
+      // counting
+      // 透過 count() 來計算參數被輸出幾次
+      // 可使用 countReset() 來歸零
+      for (let i = 0; i < 10; i++) {
+        console.count("Willy14620");
+        if (i % 3 === 0) {
+          console.countReset("Willy14620");
+        }
+      }
+
+      // timing
+      // 計算請求的時間
+      console.time("fetch");
+      fetch("https://api.github.com/users/willy14620")
+        .then((res) => res.json())
+        .then((data) => {
+          console.timeEnd("fetch");
+          console.log(data);
+        });
+
+      // 表格化輸出
+      console.table(dogs);
+    </script>
+  </body>
+</html>
