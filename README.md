@@ -29,3 +29,4 @@
 | 15   | LocalStorage                     | [前往](https://myoschen.github.io/JavaScript30/15-LocalStorage)                     |
 | 16   | Mouse Move Shadow                | [前往](https://myoschen.github.io/JavaScript30/16-Mouse-Move-Shadow)                |
 | 17   | Sort Without Articles            | [前往](https://myoschen.github.io/JavaScript30/17-Sort-Without-Articles)            |
+| 18   | Adding Up Times with Reduce      | [前往](https://myoschen.github.io/JavaScript30/18-Adding-Up-Times-with-Reduce)      |
