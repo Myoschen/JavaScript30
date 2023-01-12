@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Reference VS Copy</title>
+  </head>
+  <body>
+    <script>
+      // start with strings, numbers and booleans
+      let name = 'Myos';
+      let age = 22;
+
+      let copyName = name;
+      let copyAge = age;
+
+      console.log(`Name: ${name} ${copyName}`);
+      console.log(`Name: ${age} ${copyAge}`);
+
+      // Let's say we have an array
+      const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+
+      // and we want to make a copy of it.
+      const copyPlayers = players;
+
+      // You might think we can just do something like this:
+      console.log('original: ', players);
+      console.log('copy: ', copyPlayers);
+
+      // however what happens when we update that array?
+      copyPlayers[0] = 'Myos';
+      copyPlayers[1] = 'Chen';
+
+      // now here is the problem!
+      console.log('original: ', players);
+      console.log('copy: ', copyPlayers);
+
+      // oh no - we have edited the original array too!
+
+      // Why? It's because that is an array reference, not an array copy. They both point to the same array!
+
+      // So, how do we fix this? We take a copy instead!
+      let newCopyPlayers;
+
+      // one way
+      // 使用 Array.from() 複製 array
+      newCopyPlayers = Array.from(players);
+      // 使用 slice() 複製 array
+      newCopyPlayers = players.slice();
+
+      // or create a new array and concat the old one in
+      // 使用 concat() 複製 array
+      newCopyPlayers = [].concat(players);
+
+      // or use the new ES6 Spread
+      // 使用 ES6 Spread 複製 array
+      newCopyPlayers = [...players];
+
+      // now when we update it, the original one isn't changed
+      newCopyPlayers[0] = 'Mike';
+
+      console.log('original: ', players);
+      console.log('new copy: ', newCopyPlayers);
+
+      // The same thing goes for objects, let's say we have a person object
+
+      // with Objects
+      const person = {
+        name: 'Wes Bos',
+        age: 80,
+      };
+
+      // and think we make a copy:
+      const copyPerson = person;
+      copyPerson['name'] = 'Myos';
+      copyPerson['age'] = 22;
+
+      console.log('original: ', person);
+      console.log('copy: ', copyPerson);
+
+      // how do we take a copy instead?
+      let newCopyPerson;
+      // 使用 Object.assign() 複製物件
+      newCopyPerson = Object.assign({}, person);
+
+      // We will hopefully soon see the object ...spread
+      // 使用 ES6 Spread 複製物件
+      newCopyPerson = { ...person };
+
+      // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
+      // 深層複製的話可以使用 JSON.parse(JSON.stringify(<object>)) 來達成
+    </script>
+  </body>
+</html>
