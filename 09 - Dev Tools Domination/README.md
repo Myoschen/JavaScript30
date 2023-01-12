@@ -4,7 +4,7 @@
 
 - 此次為練習使用 **DevTools** 及 `console` 來進行 Debug。
 
-## 提示
+## 筆記
 
 - 了解 `console` 的各種輸出方式。
 

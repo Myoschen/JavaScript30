@@ -4,7 +4,7 @@
 
 - 此次為練習操作 Html5 的畫布（`canvas`）功能。
 
-## 提示
+## 筆記
 
 - 了解 `canvas` 標籤作用、及如何透過 JavaScript 操作。
 

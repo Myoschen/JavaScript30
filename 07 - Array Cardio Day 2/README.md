@@ -4,7 +4,7 @@
 
 - 本次同 04 為練習操作 Array 的方法，例如：`some()`, `every()`, `find()`, `findIndex()` 等。
 
-## 提示
+## 筆記
 
 - 須了解 `some()`、`every()`、`find()`、`findIndex()` 的參數及回傳值。
   

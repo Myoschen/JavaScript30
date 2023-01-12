@@ -4,7 +4,7 @@
 
 - 點擊 panel 會觸發圖片展開、文字顯示的動畫。
 
-## 提示
+## 筆記
 
 - 了解 CSS Flexbox，例如：`flex-grow`、`flex-shrink`、`flex-basis` 等，詳細說明可參考下方連結。
   

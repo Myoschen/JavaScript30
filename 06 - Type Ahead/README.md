@@ -4,7 +4,7 @@
 
 - 輸入 City 或 State，於頁面顯示符合的資料（City、State、Population）。
 
-## 提示
+## 筆記
 
 - 了解如何使用 `fetch()` 取得 API 的資料。
   

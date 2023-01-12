@@ -4,7 +4,7 @@
 
 - 本次主要為練習操作 Array 的方法，例如：map(), filter(), sort(), reduce()等。
 
-## 提示
+## 筆記
 
 - 須了解 `map()`、`filter()`、`sort()`、`reduce()` 的參數及回傳值。
 
