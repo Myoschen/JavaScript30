@@ -26,3 +26,4 @@
 | 12   | Key Sequence Detection           | [前往](<https://myoschen.github.io/JavaScript30/12 - Key Sequence Detection>)           |
 | 13   | Slide in on Scroll               | [前往](<https://myoschen.github.io/JavaScript30/13 - Slide in on Scroll>)               |
 | 14   | JavaScript References VS Copying | [前往](<https://myoschen.github.io/JavaScript30/14 - JavaScript References VS Copying>) |
+| 15   | LocalStorage                     | [前往](<https://myoschen.github.io/JavaScript30/15 - LocalStorage>)                     |
