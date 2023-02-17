@@ -30,3 +30,5 @@
 | 16   | Mouse Move Shadow                | [前往](https://myoschen.github.io/JavaScript30/16-Mouse-Move-Shadow)                |
 | 17   | Sort Without Articles            | [前往](https://myoschen.github.io/JavaScript30/17-Sort-Without-Articles)            |
 | 18   | Adding Up Times with Reduce      | [前往](https://myoschen.github.io/JavaScript30/18-Adding-Up-Times-with-Reduce)      |
+| 19   | Webcam Fun                       | [前往](https://myoschen.github.io/JavaScript30/19-Webcam-Fun)                       |
+| 20   | Speech Detection                 | [前往](https://myoschen.github.io/JavaScript30/20-Speech-Detection)                 |
